@@ -534,7 +534,7 @@ public class RuntimeDataServiceBase {
             for (TaskEvent taskSummary : tasks) {
 
                 TaskEventInstance task = TaskEventInstance.builder()
-                        .id(taskSummary.getTaskId())
+                        .id(taskSummary.getId())
                         .taskId(taskSummary.getTaskId())
                         .date(taskSummary.getLogTime())
                         .processInstanceId(taskSummary.getProcessInstanceId())
